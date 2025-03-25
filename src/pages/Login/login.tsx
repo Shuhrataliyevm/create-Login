@@ -41,13 +41,13 @@ const Login: React.FC = () => {
                     <p>{currentTime}</p> 
                 </div>
                 <div className="phone-image">
-                    <img src="/public/icons/Signal.svg" alt="Signal icon" />
-                    <img src="/public/icons/Connection.svg" alt="Connection icon" />
-                    <img src="/public/icons/Battery.svg" alt="Battery Icon" />
+                    <img src="/public/icons/Signal.svg" alt="Signal icons" />
+                    <img src="/public/icons/Connection.svg" alt="Connection icons" />
+                    <img src="/public/icons/Battery.svg" alt="Battery Icons" />
                 </div>
             </div>
             <div className="login-image">
-                <img src="/public/icons/LOGO.svg" alt="LOGO Icon" />
+                <img src="/public/icons/LOGO.svg" alt="LOGO Icons" />
             </div>
             <h4>Dasturga kirish</h4>
             <p className="logins-text">
