@@ -47,7 +47,7 @@ const Login: React.FC = () => {
                 </div>
             </div>
             <div className="login-image">
-                <img src="/icons/LOGO.svg" alt="LOGO Icons" />
+                <img src="/icons/LOGO.svg" alt="LOGO Icon" />
             </div>
             <h4>Dasturga kirish</h4>
             <p className="logins-text">

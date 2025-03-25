@@ -34,20 +34,20 @@ const Register: React.FC = () => {
     return (
         <Card className="register">
             <div className="register-enter-images">
-                <img className="register-enter" src="/public/images/login enter pictures.png" alt="login enter pictures image" />
+                <img className="register-enter" src="/images/login enter pictures.png" alt="login enter pictures image" />
             </div>
             <div className="phones">
                 <div className="phones-time">
                     <p>{currentTime}</p> 
                 </div>
                 <div className="phone-images">
-                    <img src="/public/icons/Signal.svg" alt="Signal Icon" />
-                    <img src="/public/icons/Connection.svg" alt="Connection Icon" />
-                    <img src="/public/icons/Battery.svg" alt="Battery Icon" />
+                    <img src="/icons/Signal.svg" alt="Signal Icon" />
+                    <img src="/icons/Connection.svg" alt="Connection Icon" />
+                    <img src="/icons/Battery.svg" alt="Battery Icon" />
                 </div>
             </div>
             <div className="register-image">
-                <img src="/public/icons/LOGO.svg" alt="LOGO Icon" />
+                <img src="/icons/LOGO.svg" alt="LOGO Icon" />
             </div>
             <h4>Dasturga kirish</h4>
             <p className="register-text">

@@ -34,31 +34,31 @@ const Profile = () => {
                     <p>{currentTime}</p>
                 </div>
                 <div className="phones-image">
-                    <img src="/public/icons/Signal.svg" alt="Signal Icon" />
-                    <img src="/public/icons/Connection.svg" alt="Connection Icon" />
-                    <img src="/public/icons/Battery.svg" alt="Battery Icon" />
+                    <img src="/icons/Signal.svg" alt="Signal Icon" />
+                    <img src="/icons/Connection.svg" alt="Connection Icon" />
+                    <img src="/icons/Battery.svg" alt="Battery Icon" />
                 </div>
             </div>
             <div className="profile-card">
                 <img
-                    src="/public/images/image@2x.png"
+                    src="/images/image@2x.png"
                     alt="image@2x image"
                     className="profile-avatar"
                 />
                 <h2 className="profile-name">{username}</h2>
                 <button className="logout-btn" onClick={handleLogout}>
-                    <img src="/public/icons/logout.svg" alt="logout icon" />
+                    <img src="/icons/logout.svg" alt="logout icon" />
                 </button>
                 <button onClick={() => navigate("/calendar")} className="calendar">
 
-                    <img src="/public/images/calendar.png" alt="calendar image" />
+                    <img src="/images/calendar.png" alt="calendar image" />
                 </button>
                 <div className="reason">
                     <div className="texts">
                         <h4>135,214,200 so'm</h4>
                         <p>Umumiy nasiya:</p>
                         <div className="img">
-                            <img src="/public/images/Show.png" alt="show image" />
+                            <img src="/images/Show.png" alt="show image" />
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Profile = () => {
 
                 <div className="carts">
                     <div className="cart">
-                        <img src="/public/images/Wallet icon.png" alt="Wallet icon" />
+                        <img src="/images/Wallet icon.png" alt="Wallet icon" />
                         <p>Hisobingizda</p>
                         <h3>300 000 so'm</h3>
                         <button onClick={() => {
@@ -94,26 +94,26 @@ const Profile = () => {
 
                 <div className="nastroyka">
                     <div className="homes">
-                        <img src="/public/images/home.png" alt="home image" />
+                        <img src="/images/home.png" alt="home image" />
                         <p className="menu">Asosiy</p>
                     </div>
                     <div className="homes">
-                        <img src="/public/images/user.png" alt="user image" />
+                        <img src="/images/user.png" alt="user image" />
                         <p>Mijozlar</p>
                     </div>
                     <div className="homes">
-                        <img src="/public/images/Folder.png" alt="folder image" />
+                        <img src="/images/Folder.png" alt="folder image" />
                         <p>Hisobot</p>
                     </div>
                     <div className="homes">
-                        <img src="/public/images/Settings.png" alt="settings image" />
+                        <img src="/images/Settings.png" alt="settings image" />
                         <p>Sozlama</p>
                     </div>
                 </div>
 
             </div>
             <div className="profiles-images">
-                <img className="profile-img" src="/public/images/login enter pictures.png" alt="login enter pictures image" />
+                <img className="profile-img" src="/images/login enter pictures.png" alt="login enter pictures image" />
             </div>
         </div>
     );
