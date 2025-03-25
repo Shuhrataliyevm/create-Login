@@ -17,10 +17,10 @@ const Register: React.FC = () => {
             setCurrentTime(`${hours}:${minutes}`);
         };
 
-        updateTime(); // Boshlanishida vaqtni o‘rnatish
-        const interval = setInterval(updateTime, 60000); // Har 1 minutda yangilanadi
+        updateTime(); 
+        const interval = setInterval(updateTime, 60000); 
 
-        return () => clearInterval(interval); // Cleanup
+        return () => clearInterval(interval); 
     }, []);
 
     const handleSubmit = (): void => {
@@ -34,20 +34,20 @@ const Register: React.FC = () => {
     return (
         <Card className="register">
             <div className="register-enter-images">
-                <img className="register-enter" src="/public/assets/images/login enter pictures.png" alt="" />
+                <img className="register-enter" src="/public/images/login enter pictures.png" alt="" />
             </div>
             <div className="phones">
                 <div className="phones-time">
-                    <p>{currentTime}</p> {/* 📌 Telefonda ko‘rinadigan vaqt */}
+                    <p>{currentTime}</p> 
                 </div>
                 <div className="phone-images">
-                    <img src="/public/assets/icons/Signal.svg" alt="" />
-                    <img src="/public/assets/icons/Connection.svg" alt="#" />
-                    <img src="/public/assets/icons/Battery.svg" alt="#" />
+                    <img src="/public/icons/Signal.svg" alt="" />
+                    <img src="/public/icons/Connection.svg" alt="#" />
+                    <img src="/public/icons/Battery.svg" alt="#" />
                 </div>
             </div>
             <div className="register-image">
-                <img src="/public/assets/icons/LOGO.svg" alt="" />
+                <img src="/public/icons/LOGO.svg" alt="" />
             </div>
             <h4>Dasturga kirish</h4>
             <p className="register-text">

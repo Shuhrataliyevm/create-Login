@@ -17,10 +17,10 @@ const Login: React.FC = () => {
             setCurrentTime(`${hours}:${minutes}`);
         };
 
-        updateTime(); // Boshlanishida vaqtni o‘rnatish
-        const interval = setInterval(updateTime, 60000); // Har 1 minutda yangilanadi
+        updateTime(); 
+        const interval = setInterval(updateTime, 60000); 
 
-        return () => clearInterval(interval); // Cleanup
+        return () => clearInterval(interval); 
     }, []);
 
     const handleSubmit = (): void => {
@@ -34,16 +34,16 @@ const Login: React.FC = () => {
     return (
         <Card className="logins">
             <div className="login-enter-images">
-                <img className="login-enter" src="/public/assets/images/login enter pictures.png" alt="" />
+                <img className="login-enter" src="/public/images/login enter pictures.png" alt="" />
             </div>
             <div className="phone">
                 <div className="phone-time">
-                    <p>{currentTime}</p> {/* 📌 Telefonda ko‘rinadigan vaqt */}
+                    <p>{currentTime}</p> 
                 </div>
                 <div className="phone-image">
-                    <img src="/public/assets/icons/Signal.svg" alt="" />
-                    <img src="/public/assets/icons/Connection.svg" alt="#" />
-                    <img src="/public/assets/icons/Battery.svg" alt="#" />
+                    <img src="/public/icons/Signal.svg" alt="" />
+                    <img src="/public/icons/Connection.svg" alt="#" />
+                    <img src="/public/icons/Battery.svg" alt="#" />
                 </div>
             </div>
             <div className="login-image">

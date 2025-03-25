@@ -4,7 +4,7 @@ import "../../ui/profile.scss";
 
 const Profile = () => {
     const navigate = useNavigate();
-    const username = localStorage.getItem("username") || "Foydalanuvchi"; // Default nom
+    const username = localStorage.getItem("username") || "Foydalanuvchi"; 
     const [currentTime, setCurrentTime] = useState("");
 
     useEffect(() => {
@@ -34,31 +34,31 @@ const Profile = () => {
                     <p>{currentTime}</p>
                 </div>
                 <div className="phones-image">
-                    <img src="/public/assets/icons/Signal.svg" alt="" />
-                    <img src="/public/assets/icons/Connection.svg" alt="#" />
-                    <img src="/public/assets/icons/Battery.svg" alt="#" />
+                    <img src="/public/icons/Signal.svg" alt="" />
+                    <img src="/public/icons/Connection.svg" alt="#" />
+                    <img src="/public/icons/Battery.svg" alt="#" />
                 </div>
             </div>
             <div className="profile-card">
                 <img
-                    src="/public/assets/images/image@2x.png"
+                    src="/public/images/image@2x.png"
                     alt="Avatar"
                     className="profile-avatar"
                 />
                 <h2 className="profile-name">{username}</h2>
                 <button className="logout-btn" onClick={handleLogout}>
-                    <img src="/public/assets/icons/logout.svg" alt="#" />
+                    <img src="/public/icons/logout.svg" alt="#" />
                 </button>
                 <button onClick={() => navigate("/calendar")} className="calendar">
 
-                    <img src="/public/assets/images/calendar.png" alt="#" />
+                    <img src="/public/images/calendar.png" alt="#" />
                 </button>
                 <div className="reason">
                     <div className="texts">
                         <h4>135,214,200 so'm</h4>
                         <p>Umumiy nasiya:</p>
                         <div className="img">
-                            <img src="/public/assets/images/Show.png" alt="#" />
+                            <img src="/public/images/Show.png" alt="#" />
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Profile = () => {
 
                 <div className="carts">
                     <div className="cart">
-                        <img src="/public/assets/images/Wallet icon.png" alt="" />
+                        <img src="/public/images/Wallet icon.png" alt="" />
                         <p>Hisobingizda</p>
                         <h3>300 000 so'm</h3>
                         <button onClick={() => {
@@ -94,26 +94,26 @@ const Profile = () => {
 
                 <div className="nastroyka">
                     <div className="homes">
-                        <img src="/public/assets/images/home.png" alt="" />
+                        <img src="/public/images/home.png" alt="" />
                         <p className="menu">Asosiy</p>
                     </div>
                     <div className="homes">
-                        <img src="/public/assets/images/user.png" alt="" />
+                        <img src="/public/images/user.png" alt="" />
                         <p>Mijozlar</p>
                     </div>
                     <div className="homes">
-                        <img src="/public/assets/images/Folder.png" alt="" />
+                        <img src="/public/images/Folder.png" alt="" />
                         <p>Hisobot</p>
                     </div>
                     <div className="homes">
-                        <img src="/public/assets/images/Settings.png" alt="" />
+                        <img src="/public/images/Settings.png" alt="" />
                         <p>Sozlama</p>
                     </div>
                 </div>
 
             </div>
             <div className="profiles-images">
-                <img className="profile-img" src="/public/assets/images/login enter pictures.png" alt="" />
+                <img className="profile-img" src="/public/images/login enter pictures.png" alt="" />
             </div>
         </div>
     );
