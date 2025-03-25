@@ -16,9 +16,9 @@ const Profile = () => {
         };
 
         updateTime();
-        const interval = setInterval(updateTime, 60000); 
+        const interval = setInterval(updateTime, 60000);
 
-        return () => clearInterval(interval); 
+        return () => clearInterval(interval);
     }, []);
 
     const handleLogout = () => {
@@ -31,7 +31,7 @@ const Profile = () => {
         <div className="profile-container">
             <div className="profile-phone">
                 <div className="profile-time">
-                    <p>{currentTime}</p> 
+                    <p>{currentTime}</p>
                 </div>
                 <div className="phones-image">
                     <img src="/public/assets/icons/Signal.svg" alt="" />
@@ -50,7 +50,7 @@ const Profile = () => {
                     <img src="/public/assets/icons/logout.svg" alt="#" />
                 </button>
                 <button onClick={() => navigate("/calendar")} className="calendar">
-                    
+
                     <img src="/public/assets/images/calendar.png" alt="#" />
                 </button>
                 <div className="reason">
@@ -78,7 +78,12 @@ const Profile = () => {
                         <img src="/public/assets/images/Wallet icon.png" alt="" />
                         <p>Hisobingizda</p>
                         <h3>300 000 so'm</h3>
-                        <button onClick={prompt}>+</button>
+                        <button onClick={() => {
+                            const amount = prompt("To‘lov miqdorini kiriting");
+                            if (amount) {
+                                console.log("To‘lov miqdori:", amount);
+                            }
+                        }}>+</button>
 
                         <div className="nace">
                             <p>Bu oy uchun to‘lov:</p>
