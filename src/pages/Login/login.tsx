@@ -34,7 +34,7 @@ const Login: React.FC = () => {
     return (
         <Card className="logins">
             <div className="login-enter-images">
-                <img className="login-enter" src="/public/images/login enter pictures.png" alt="" />
+                <img className="login-enter" src="/public/images/login enter pictures.png" alt="login enter pictures images" />
             </div>
             <div className="phone">
                 <div className="phone-time">
