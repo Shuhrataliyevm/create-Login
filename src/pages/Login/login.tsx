@@ -34,20 +34,20 @@ const Login: React.FC = () => {
     return (
         <Card className="logins">
             <div className="login-enter-images">
-                <img className="login-enter" src="public/images/login enter pictures.png" alt="" />
+                <img className="login-enter" src="/public/images/login enter pictures.png" alt="" />
             </div>
             <div className="phone">
                 <div className="phone-time">
                     <p>{currentTime}</p> 
                 </div>
                 <div className="phone-image">
-                    <img src="public/icons/Signal.svg" alt="" />
-                    <img src="public/icons/Connection.svg" alt="#" />
-                    <img src="public/icons/Battery.svg" alt="#" />
+                    <img src="/public/icons/Signal.svg" alt="Signal icon" />
+                    <img src="/public/icons/Connection.svg" alt="Connection icon" />
+                    <img src="/public/icons/Battery.svg" alt="Battery Icon" />
                 </div>
             </div>
             <div className="login-image">
-                <img src="/public/assets/icons/LOGO.svg" alt="" />
+                <img src="/public/icons/LOGO.svg" alt="LOGO Icon" />
             </div>
             <h4>Dasturga kirish</h4>
             <p className="logins-text">
