@@ -1,0 +1,199 @@
+.calendar-container {
+    width: 100%;
+    max-width: 660px;
+    margin: auto;
+    font-family: "Arial", sans-serif;
+    background: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    position: relative;
+    left: -430px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .back-button {
+        border: none;
+        background: none;
+        font-size: 22px;
+        cursor: pointer;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    h2 {
+        font-size: 23px;
+        font-weight: 600;
+        position: relative;
+        left: 180px;
+        top: 45px;
+        color: #000000;
+    }
+}
+
+.calendar-body {
+    .month-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        .nav-button {
+            border: none;
+            background: #F5F5F5;
+            color: #735CD8;
+            font-size: 20px;
+            padding: 10px 25px;
+            border-radius: 6px;
+            position: relative;
+            left: 200px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+
+            &:hover {
+                color: white;
+                background: #735CD8;
+            }
+
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        left: -255px;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 22px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    strong {
+        font-size: 20px;
+        color: #000;
+    }
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    text-align: center;
+    margin-top: 10px;
+
+    .calendar-day {
+        position: relative;
+        padding: 12px 0;
+        border-radius: 8px;
+        background: #f5f5f5;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #ddd;
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &.selected {
+            background: #e0e3e1; 
+            color: white;
+            font-weight: 600;
+            box-shadow: 0 10px 14px rgba(40, 167, 69, 0.3);
+
+            &::after {
+                content: "";
+                width: 8px;
+                height: 8px;
+                background-color: #15cc3f;
+                border-radius: 50%;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+            }
+        }
+    }
+}
+
+.payment-info {
+    margin-top: 20px;
+    padding: 12px;
+    background: #f5f5f5;
+    border-radius: 10px;
+
+    h4 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .month {
+        position: relative;
+        left: -2px;
+        font-weight: 600;
+        width: 339px;
+        height: 25px;
+        font-size: 18px;
+        color: #000000;
+    }
+
+    .payment-card {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        background: white;
+        border-radius: 8px;
+        margin-top: 26px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        span {
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-left: -125px;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
