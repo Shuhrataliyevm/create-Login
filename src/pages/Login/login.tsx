@@ -6,6 +6,7 @@ import "../../ui/login.scss";
 const Login: React.FC = () => {
     const [username, setUsername] = useState("");
     const [currentTime, setCurrentTime] = useState("");
+
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -16,9 +17,10 @@ const Login: React.FC = () => {
             setCurrentTime(`${hours}:${minutes}`);
         };
 
-        updateTime();
-        const interval = setInterval(updateTime, 60000);
-        return () => clearInterval(interval);
+        updateTime(); 
+        const interval = setInterval(updateTime, 60000); 
+
+        return () => clearInterval(interval); 
     }, []);
 
     const handleSubmit = (): void => {
@@ -32,20 +34,20 @@ const Login: React.FC = () => {
     return (
         <Card className="logins">
             <div className="login-enter-images">
-                <img className="login-enter" src="/images/login-enter-pictures.png" alt="Login Enter" />
+                <img className="login-enter" src="/images/login enter pictures.png" alt="login enter pictures images" />
             </div>
             <div className="phone">
                 <div className="phone-time">
-                    <p>{currentTime}</p>
+                    <p>{currentTime}</p> 
                 </div>
                 <div className="phone-image">
-                    <img src="/icons/Signal.svg" alt="Signal" />
-                    <img src="/icons/Connection.svg" alt="Connection" />
-                    <img src="/icons/Battery.svg" alt="Battery" />
+                    <img src="/icons/Signal.svg" alt="Signal icons" />
+                    <img src="/icons/Connection.svg" alt="Connection icons" />
+                    <img src="/icons/Battery.svg" alt="Battery Icons" />
                 </div>
             </div>
             <div className="login-image">
-                <img src="/icons/LOGO.svg" alt="Logo" />
+                <img src="/icons/LOGO.svg" alt="LOGO Icons" />
             </div>
             <h4>Dasturga kirish</h4>
             <p className="logins-text">
@@ -53,14 +55,14 @@ const Login: React.FC = () => {
             </p>
             <Form onFinish={handleSubmit}>
                 <Form.Item
-                    className="login-input"
+                className="login-input"
                     name="login"
                     rules={[{ required: true, message: "Please enter your login!" }]}
                 >
                     <Input placeholder="Login" onChange={(e) => setUsername(e.target.value)} />
                 </Form.Item>
                 <Form.Item
-                    className="login-password"
+                className="login-pasword"
                     name="password"
                     rules={[{ required: true, message: "Please enter your password!" }]}
                 >
