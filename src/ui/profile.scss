@@ -1,20 +1,21 @@
-.profile-container{
+.profile-container {
     max-width: 660px;
     height: 100vh;
     position: relative;
     left: 30px;
-    .profile-phone{
+
+    .profile-phone {
         display: flex;
         justify-content: space-between;
     }
 
-    .phones-image{
+    .phones-image {
         position: relative;
         left: -60px;
     }
 
 
-    .profile-card{
+    .profile-card {
         display: flex;
         gap: 30px;
         align-items: center;
@@ -22,27 +23,27 @@
         top: 10px;
     }
 
-    .profiles-images{
+    .profiles-images {
         position: relative;
         left: 830px;
 
-        .profile-img{
+        .profile-img {
             width: 500px;
         }
     }
 
-    .reason{
+    .reason {
         width: 394px;
         padding: 30px 286px;
         height: 88px;
         background-color: #30AF49;
         border-radius: 20px;
         position: relative;
-        left: -355px;
+        left: -295px;
         top: 100px
     }
 
-    .texts{
+    .texts {
         width: 300px;
         display: flex;
         align-items: center;
@@ -54,34 +55,35 @@
         margin-top: -15px;
         color: white;
 
-        p{
+        p {
             font-size: 20px;
         }
 
 
-        .img{
+        .img {
             position: relative;
             left: 240px;
             top: -55px;
         }
     }
 
-    .spends{
+    .spends {
         display: flex;
         align-items: center;
-        gap: 10px;
         position: relative;
         top: 250px;
         left: -945px;
 
-        .spend{
-            width: 270px;
-            height: 137px;
+        .spend {
+            width: 370px;
+            height: 177px;
             border: 1px solid #bcbaba;
             padding: 16px;
             border-radius: 16px;
+            position: relative;
+            left: 50px;
 
-            h5{
+            h5 {
                 width: 150px;
                 height: 80px;
                 font-weight: 600;
@@ -90,19 +92,21 @@
             }
         }
 
-        .color{
+        .color {
             font-size: 18px;
             color: red;
         }
 
-        .cost{
-            width: 270px;
-            height: 137px;
+        .cost {
+            width: 370px;
+            height: 177px;
             border: 1px solid #bcbaba;
             padding: 16px;
             border-radius: 16px;
+            position: relative;
+            left: 550px;
 
-            h5{
+            h5 {
                 width: 150px;
                 height: 80px;
                 font-weight: 600;
@@ -111,32 +115,39 @@
             }
         }
 
-        .colors{
+        .colors {
             font-size: 18px;
             color: #30AF49
         }
     }
 
-    .carts{
+    .homes button {
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .carts {
         position: relative;
         left: -1530px;
         top: 400px;
 
-        .cart{
+        .cart {
             display: flex;
             gap: 20px;
 
-            p{
+
+            p {
                 width: 153px;
                 height: 29px;
                 font-weight: 500;
                 font-size: 18px;
                 color: #000000;
                 position: relative;
-                left: 30px;
+                left: -140px;
             }
 
-            h3{
+            h3 {
                 width: 200px;
                 position: relative;
                 top: 20px;
@@ -145,14 +156,15 @@
                 color: #000000;
                 position: relative;
                 left: -144px;
-                top:25px;
+                top: 25px;
             }
 
-            button{
+            button {
                 border-radius: 50%;
-                width: 47px;
-                height: 47px;
-                font-size: 25px;
+                width: 57px;
+                height: 57px;
+                font-size: 28px;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
                 color: white;
                 background-color: #3478F7;
                 border: none;
@@ -161,44 +173,65 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                left: 55px;
+                left: 570px;
             }
         }
     }
 
-    .nace{
+    #new-p {
+        position: relative;
+        left: -295px;
+        font-size: 30px;
+    }
+
+    #new-ps {
+        position: relative;
+        left: -120px;
+    }
+
+    .nace {
         display: flex;
         gap: 290px;
         position: relative;
         top: 100px;
         font-size: 18px;
         left: -550px;
+
     }
 
-    #cart-color{
+    #cart-color {
+        width: 200px;
+        position: relative;
+        left: 380px;
+        font-size: 28px;
         color: #30AF49
     }
 
-    .nastroyka{
+    #cart-colors {
+        width: 250px;
+        font-size: 28px;
+    }
+
+    .nastroyka {
         display: flex;
         align-items: center;
         text-align: center;
-        gap: 114px;
+        gap: 350px;
         position: relative;
-        left: -2680px;
+        left: -3000px;
         top: 570px;
         cursor: pointer;
 
-        p{
+        p {
             color: #848080;
         }
 
-        .menu{
+        .menu {
             color: #3478F7
         }
     }
 
-    .logout-btn{
+    .logout-btn {
         border: none;
         background-color: white;
         position: relative;
@@ -206,13 +239,45 @@
         cursor: pointer;
     }
 
-    .calendar{
+    .calendar {
         border-radius: 12px;
         border: none;
         background-color: white;
         position: relative;
-        left: 220px;
+        left: 950px;
         cursor: pointer;
     }
 
-};
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid #30AF49;
+        position: relative;
+        left: 120px;
+    }
+
+    .profile-name {
+        position: relative;
+        left: 120px;
+    }
+
+    .logout-btn {
+        position: relative;
+        left: 100px;
+    }
+
+    .profile-time {
+        position: relative;
+        left: 140px;
+        top: 20px;
+        font-size: 20px;
+    }
+
+    .phones-image {
+        position: relative;
+        left: 700px;
+        top: 20px;
+    }
+
+}

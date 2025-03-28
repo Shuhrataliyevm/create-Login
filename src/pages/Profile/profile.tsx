@@ -4,7 +4,7 @@ import "../../ui/profile.scss";
 
 const Profile = () => {
     const navigate = useNavigate();
-    const username = localStorage.getItem("username") || "Foydalanuvchi"; 
+    const username = localStorage.getItem("username") || "Foydalanuvchi";
     const [currentTime, setCurrentTime] = useState("");
 
     useEffect(() => {
@@ -75,10 +75,10 @@ const Profile = () => {
 
                 <div className="carts">
                     <div className="cart">
-                        <img src="/images/Wallet icon.png" alt="Wallet icon" />
-                        <p>Hisobingizda</p>
-                        <h3>300 000 so'm</h3>
-                        <button onClick={() => {
+                        <img style={{ width: "75px", height: "75px", position: "relative", left: "-135px", top:"-10px" }} src="/images/Wallet icon.png" alt="Wallet icon" />
+                        <p id="new-ps" >Hisobingizda</p>
+                        <h3 id="new-p" >300 000 so'm</h3>
+                        <button id="promt-btn" onClick={() => {
                             const amount = prompt("To‘lov miqdorini kiriting");
                             if (amount) {
                                 console.log("To‘lov miqdori:", amount);
@@ -86,7 +86,7 @@ const Profile = () => {
                         }}>+</button>
 
                         <div className="nace">
-                            <p>Bu oy uchun to‘lov:</p>
+                            <p id="cart-colors">Bu oy uchun to‘lov:</p>
                             <p id="cart-color">To‘lov qilingan</p>
                         </div>
                     </div>
@@ -98,9 +98,12 @@ const Profile = () => {
                         <p className="menu">Asosiy</p>
                     </div>
                     <div className="homes">
-                        <img src="/images/user.png" alt="user image" />
-                        <p>Mijozlar</p>
+                        <button onClick={() => navigate("/products")}>
+                            <img src="/images/user.png" alt="user image" />
+                            <p>Mijozlar</p>
+                        </button>
                     </div>
+
                     <div className="homes">
                         <img src="/images/Folder.png" alt="folder image" />
                         <p>Hisobot</p>
@@ -110,10 +113,6 @@ const Profile = () => {
                         <p>Sozlama</p>
                     </div>
                 </div>
-
-            </div>
-            <div className="profiles-images">
-                <img className="profile-img" src="/images/login enter pictures.png" alt="login enter pictures image" />
             </div>
         </div>
     );

@@ -1,7 +1,11 @@
 import axios from "axios";
 
 const API = axios.create({
-    baseURL: "https://nasiya.takedaservice.uz",
+    baseURL: "https://nasiya.takedaservice.uz/api",
+    headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+    }
 });
 
 API.interceptors.request.use((req) => {
