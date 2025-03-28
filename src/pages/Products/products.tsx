@@ -150,7 +150,7 @@ const Products = () => {
                 ))}
             </div>
 
-            <button
+            <button id='create-debtor-btn'
                 className="fixed bottom-20 right-4 bg-blue-500 text-white rounded-full px-6 py-3 shadow-lg hover:bg-blue-600 transition-colors"
             >
                 + Yaratish
