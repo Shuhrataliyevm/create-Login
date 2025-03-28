@@ -1,8 +1,4 @@
-.profile-container {
-    max-width: 660px;
-    height: 100vh;
-    position: relative;
-    left: 30px;
+
 
     .profile-phone {
         display: flex;
@@ -121,6 +117,11 @@
         }
     }
 
+    .newCart{
+        position: absolute;
+        left: 180px;
+    }
+
     .homes button {
         border: none;
         background-color: white;
@@ -129,9 +130,9 @@
 
     .carts {
         position: relative;
-        left: -1530px;
         top: 400px;
-
+        padding: 0;
+        margin: 0;
         .cart {
             display: flex;
             gap: 20px;
@@ -173,20 +174,20 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                left: 570px;
+                left: 650px;
             }
         }
     }
 
     #new-p {
         position: relative;
-        left: -295px;
+        left: -200px;
         font-size: 30px;
     }
 
     #new-ps {
         position: relative;
-        left: -120px;
+        left: -25px;
     }
 
     .nace {
@@ -201,8 +202,8 @@
 
     #cart-color {
         width: 200px;
-        position: relative;
-        left: 380px;
+        position: absolute;
+        left: 1007px;
         font-size: 28px;
         color: #30AF49
     }
@@ -210,6 +211,8 @@
     #cart-colors {
         width: 250px;
         font-size: 28px;
+        position: absolute;
+        left: -60px;
     }
 
     .nastroyka {
@@ -217,9 +220,9 @@
         align-items: center;
         text-align: center;
         gap: 350px;
-        position: relative;
-        left: -3000px;
-        top: 570px;
+        position: absolute;
+        left: 130px;
+        top: 620px;
         cursor: pointer;
 
         p {
@@ -276,8 +279,6 @@
 
     .phones-image {
         position: relative;
-        left: 700px;
+        left: 820px;
         top: 20px;
     }
-
-}

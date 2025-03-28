@@ -4,3 +4,12 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+body{
+  width: 100vh;
+  height: 700px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}

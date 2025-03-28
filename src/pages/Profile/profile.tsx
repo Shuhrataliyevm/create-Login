@@ -73,9 +73,10 @@ const Profile = () => {
                     </div>
                 </div>
 
+                <div className="newCart">
                 <div className="carts">
                     <div className="cart">
-                        <img style={{ width: "75px", height: "75px", position: "relative", left: "-135px", top:"-10px" }} src="/images/Wallet icon.png" alt="Wallet icon" />
+                        <img style={{ width: "75px", height: "75px", position: "relative", left: "-55px", top:"-10px" }} src="/images/Wallet icon.png" alt="Wallet icon" />
                         <p id="new-ps" >Hisobingizda</p>
                         <h3 id="new-p" >300 000 so'm</h3>
                         <button id="promt-btn" onClick={() => {
@@ -91,6 +92,8 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
+                </div>
+
 
                 <div className="nastroyka">
                     <div className="homes">
